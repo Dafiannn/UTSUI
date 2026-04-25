@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 82px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0a0a0a;
+  letter-spacing: -0.5px;
+}
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+.main-nav a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+.main-nav a:hover {
+  color: var(--primary);
+}
+.sign-up-btn {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+/* CSS for section section:Hero */
+.hero {
+  position: relative;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.4) 100%);
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  color: var(--white);
+}
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 24px 0;
+}
+.hero-desc {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+.btn-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+.hero-featured {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.featured-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  position: relative;
+}
+.featured-badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+}
+.featured-img-wrap {
+  background-color: #8bb8d6;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.featured-img {
+  width: 80%;
+  transform: scale(1.1);
+}
+.featured-info h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+.featured-info .price {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+@media (max-width: 992px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    margin-bottom: 40px;
+  }
+  .hero-desc {
+    margin: 0 auto 40px;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .hero-featured {
+    justify-content: center;
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 576px) {
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+/* CSS for section section:Stats */
+.stats {
+  background-color: var(--black);
+  padding: 40px 0;
+}
+.stats-inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-num {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-size: 16px;
+  color: var(--gray-light);
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .stats-inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* CSS for section section:Testimonial */
+.testimonial {
+  background-color: var(--bg-light);
+  padding: 100px 0;
+  text-align: center;
+}
+.testimonial-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.quote {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dark);
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.author-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--black) 100%);
+}
+.author-info {
+  text-align: left;
+}
+.author-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+.author-role {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: 24px;
+  }
+}
+
+/* CSS for section section:Features */
+.features {
+  position: relative;
+  padding: 120px 0;
+  color: var(--white);
+  overflow: hidden;
+}
+.features-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.features-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.features-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.features-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.features-content {
+  flex: 1;
+  max-width: 500px;
+}
+.verify-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--primary) 0%, #ff6900 100%);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.features-title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.features-desc {
+  font-size: 18px;
+  color: var(--gray-lighter);
+  margin-bottom: 40px;
+}
+.verifier {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.verifier-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, #ff6900 100%);
+}
+.verifier-info {
+  display: flex;
+  flex-direction: column;
+}
+.verifier-label {
+  font-size: 14px;
+  color: var(--gray-light);
+}
+.verifier-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+.features-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1.9px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 32px;
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.feature-card p {
+  font-size: 15px;
+  color: var(--gray-lighter);
+  line-height: 1.6;
+}
+@media (max-width: 992px) {
+  .features-inner {
+    flex-direction: column;
+  }
+  .features-content {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .features-title {
+    font-size: 36px;
+  }
+}
+
+/* CSS for section section:Categories */
+.categories {
+  padding: 120px 0;
+  background-color: var(--white);
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.cat-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 10px -6px rgba(0,0,0,0.1), 0 20px 25px -5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+.cat-img-wrap {
+  height: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.cat-img-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.cat-img-wrap img {
+  position: relative;
+  z-index: 2;
+  max-height: 100%;
+  object-fit: contain;
+}
+.gradient-1 { background: linear-gradient(135deg, #e7000b 0%, #ff6900 100%); }
+.gradient-2 { background: linear-gradient(135deg, #155dfc 0%, #00b8db 100%); }
+.gradient-3 { background: linear-gradient(135deg, #9810fa 0%, #f6339a 100%); }
+.gradient-4 { background: linear-gradient(135deg, #101828 0%, #364153 100%); }
+
+.cat-info {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.cat-info h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #0a0a0a;
+}
+.cat-info p {
+  font-size: 15px;
+  color: var(--gray);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+.shop-link {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+.shop-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS for section section:Sell */
+.sell {
+  position: relative;
+  padding: 120px 0;
+  min-height: 745px;
+  display: flex;
+  align-items: center;
+}
+.sell-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 0;
+}
+.sell-bg img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.sell-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.95) 50%, rgba(255,255,255,0.8) 100%);
+}
+.sell-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.sell-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 48px;
+  border-radius: 16px;
+  max-width: 648px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+.sell-card .badge {
+  margin-bottom: 24px;
+}
+.sell-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  color: #0a0a0a;
+}
+.sell-desc {
+  font-size: 18px;
+  color: var(--gray-dark);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .sell-inner {
+    justify-content: center;
+  }
+  .sell-card {
+    padding: 32px 24px;
+  }
+  .sell-title {
+    font-size: 32px;
+  }
+}
+
+/* CSS for section section:Newsletter */
+.newsletter {
+  background: linear-gradient(180deg, #000000 0%, #101828 50%, #000000 100%);
+  padding: 100px 0;
+  text-align: center;
+}
+.newsletter-inner {
+  max-width: 448px;
+  margin: 0 auto;
+}
+.text-white { color: var(--white); }
+.text-light { color: var(--gray-lighter); margin-bottom: 0; }
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+.input-group input {
+  width: 100%;
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1.9px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.input-group input::placeholder {
+  color: var(--gray-light);
+}
+.input-group input:focus {
+  border-color: var(--primary);
+}
+.newsletter-form .btn {
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* CSS for section section:Footer */
+.site-footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 80px 0 40px;
+}
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.footer-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 8px;
+  display: block;
+}
+.footer-tagline {
+  color: var(--gray-light);
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.footer-nav {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-nav a {
+  color: var(--white);
+  font-weight: 500;
+}
+.footer-nav a:hover {
+  color: var(--primary);
+}
+.footer-divider {
+  border: none;
+  border-top: 1px solid #1e2939;
+  margin: 0 0 32px 0;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+.social-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.social-icon:hover {
+  background-color: var(--primary);
+}
+.social-icon img {
+  width: 20px;
+  height: 20px;
+}
+.footer-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-light);
+  font-size: 14px;
+}
+.footer-legal a:hover {
+  color: var(--white);
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-header">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">111.SNEAKERS</a>
+      <nav class="main-nav">
+        <a href="#">New Drops</a>
+        <a href="#">Buy</a>
+        <a href="#">Sell</a>
+        <a href="#">About</a>
+      </nav>
+      <a href="#" class="btn btn-outline sign-up-btn">Sign Up</a>
+    </div>
+  </header>
+</section>
+<section id="section-hero">
+  <div class="hero">
+    <div class="hero-bg">
+      <img src="images/23373a6245f58c92bbcffccbf3926f8be6922a4d.png" alt="Sneaker Store Background">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge badge-red">New Arrivals Daily</span>
+        <h1 class="hero-title">Your Ultimate<br>Sneaker<br>Marketplace</h1>
+        <p class="hero-desc">Buy, sell, and trade the most coveted sneakers. From vintage classics to the latest drops.</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">
+            <img src="images/1_157.svg" alt="" class="btn-icon"> Shop Now
+          </a>
+          <a href="#" class="btn btn-white">Sell Your Kicks</a>
+        </div>
+      </div>
+      <div class="hero-featured">
+        <div class="featured-card">
+          <span class="badge badge-red featured-badge">FEATURED</span>
+          <div class="featured-img-wrap">
+            <img src="images/2f677033158238c3ab54ffae9dff3b255187a835.png" alt="Air Jordan 1 Retro" class="featured-img">
+          </div>
+          <div class="featured-info">
+            <h3>Air Jordan 1 Retro</h3>
+            <div class="price">$299</div>
+            <button class="btn btn-black w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-stats">
+  <div class="stats">
+    <div class="container stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">50K+</div>
+        <div class="stat-label">Active Users</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100K+</div>
+        <div class="stat-label">Sneakers Sold</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Authentic</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-testimonial">
+  <div class="testimonial">
+    <div class="container testimonial-inner">
+      <blockquote class="quote">"The easiest way to cop limited releases. 111.sneakers changed my entire sneaker game."</blockquote>
+      <div class="author">
+        <div class="author-avatar"></div>
+        <div class="author-info">
+          <div class="author-name">Danu Adji f</div>
+          <div class="author-role">Sneaker Collector & Reseller</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-features">
+  <div class="features">
+    <div class="features-bg">
+      <img src="images/b4e376d521816e5bcd6ef2774380624c4ed76b5e.png" alt="Features Background">
+      <div class="features-overlay"></div>
+    </div>
+    <div class="container features-inner">
+      <div class="features-content">
+        <div class="verify-badge">
+          <img src="images/1_181.svg" alt="">
+          <span>100% Verified</span>
+        </div>
+        <h2 class="features-title">Authenticate<br>Every Pair</h2>
+        <p class="features-desc">Our expert team verifies every sneaker to ensure 100% authenticity. Buy with confidence knowing you're getting the real deal.</p>
+        <div class="verifier">
+          <div class="verifier-avatar"></div>
+          <div class="verifier-info">
+            <span class="verifier-label">Verified by</span>
+            <strong class="verifier-name">Sarah Williams, Lead Authenticator</strong>
+          </div>
+        </div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><img src="images/1_198.svg" alt=""></div>
+          <h3>Verified Authentic</h3>
+          <p>Every sneaker is inspected by certified authenticators</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><img src="images/1_205.svg" alt=""></div>
+          <h3>Best Prices</h3>
+          <p>Real-time market pricing ensures fair deals</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><img src="images/1_213.svg" alt=""></div>
+          <h3>Fast Shipping</h3>
+          <p>Get your kicks delivered in 2-3 business days</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><img src="images/1_220.svg" alt=""></div>
+          <h3>Easy Returns</h3>
+          <p>30-day return policy on all purchases</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-categories">
+  <div class="categories">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="section-title">Shop By Category</h2>
+        <p class="section-subtitle">From court classics to lifestyle icons, find your perfect pair</p>
+      </div>
+      <div class="category-grid">
+        <div class="cat-card">
+          <div class="cat-img-wrap gradient-1">
+            <img src="images/4002bd30b72b7b792764ec59be02ae2692b41e6c.png" alt="Basketball">
+          </div>
+          <div class="cat-info">
+            <h3>Basketball</h3>
+            <p>High-performance hoops kicks</p>
+            <a href="#" class="shop-link">Shop Now &rarr;</a>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-img-wrap gradient-2">
+            <img src="images/95b1d7600f0b3ac789db2707a6d4ae1a5d0a8dba.png" alt="Running">
+          </div>
+          <div class="cat-info">
+            <h3>Running</h3>
+            <p>Built for speed and comfort</p>
+            <a href="#" class="shop-link">Shop Now &rarr;</a>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-img-wrap gradient-3">
+            <img src="images/f7ff4a7a3ad73176ec2afd8054f2f99d504b9cd5.png" alt="Lifestyle">
+          </div>
+          <div class="cat-info">
+            <h3>Lifestyle</h3>
+            <p>Everyday streetwear essentials</p>
+            <a href="#" class="shop-link">Shop Now &rarr;</a>
+          </div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-img-wrap gradient-4">
+            <img src="images/22e0a865704cd783ee145c9002a807c10ed37b25.png" alt="Limited Edition">
+          </div>
+          <div class="cat-info">
+            <h3>Limited Edition</h3>
+            <p>Exclusive drops and collabs</p>
+            <a href="#" class="shop-link">Shop Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-sell">
+  <div class="sell">
+    <div class="sell-bg">
+      <img src="images/0ff2f442a38a6015a445f2de9724bd7206b35914.png" alt="Sell Sneakers">
+      <div class="sell-overlay"></div>
+    </div>
+    <div class="container sell-inner">
+      <div class="sell-card">
+        <span class="badge badge-black">Start Selling Today</span>
+        <h2 class="sell-title">Sell Your Sneakers with Ease</h2>
+        <p class="sell-desc">List your collection in minutes. Our platform makes it simple to reach thousands of buyers looking for their next cop. Fast payouts, secure transactions, zero hassle.</p>
+        <a href="#" class="btn btn-primary">Start Selling &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-newsletter">
+  <div class="newsletter">
+    <div class="container newsletter-inner">
+      <h2 class="section-title text-white">Join the Community</h2>
+      <p class="section-subtitle text-light">Get early access to new drops and exclusive deals</p>
+      <form class="newsletter-form">
+        <div class="input-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Start Free Trial</button>
+      </form>
+    </div>
+  </div>
+</section>
+<section id="section-footer">
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">111.SNEAKERS</a>
+          <p class="footer-tagline">The Ultimate Sneaker Marketplace</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#">Product</a>
+          <a href="#">Features</a>
+          <a href="#">Resources</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Support</a>
+        </nav>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <div class="social-links">
+          <a href="#" class="social-icon"><img src="images/1_124.svg" alt="Twitter"></a>
+          <a href="#" class="social-icon"><img src="images/1_129.svg" alt="LinkedIn"></a>
+          <a href="#" class="social-icon"><img src="images/1_132.svg" alt="Facebook"></a>
+          <a href="#" class="social-icon"><img src="images/1_135.svg" alt="Instagram"></a>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy — Terms</a>
+          <span>&copy; 2010 — 2026</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+</body>
+</html>
